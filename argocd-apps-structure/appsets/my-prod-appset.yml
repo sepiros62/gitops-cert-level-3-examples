@@ -11,7 +11,7 @@ spec:
       repoURL: https://github.com/sepiros62/gitops-cert-level-3-examples.git
       revision: HEAD
       directories:
-      #- path: argocd-apps-structure/apps/*/envs/prod-us
+      - path: argocd-apps-structure/apps/*/envs/prod-us
       - path: argocd-apps-structure/apps/*/envs/prod-eu      
   template:      
     metadata:
