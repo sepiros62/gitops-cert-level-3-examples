@@ -13,9 +13,9 @@ spec:
         repo: gitops-cert-level-3-examples
         labels:
         - preview-ready
-      filters:
-      - branchMatch: ".*preview-ready.*"
       requeueAfterSeconds: 180
+      # filters:
+      # - branchMatch: ".*-argocd"
   template:
     metadata:
       name: 'myapp-{{.branch}}'
